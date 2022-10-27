@@ -24,24 +24,31 @@
     <meta property="og:title" content="Join Room">
     <meta property="og:type" content="website">
   </head>
+  <script>
+    function jRoom(){
+      const id =document.getElementById("email-7e75").value;
+      document.cookie=`id=${id}`;
+      location.href="./Room.html";
+    }
+  </script>
   <body class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-header" id="sec-570a"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="171">
-          <img src="images/photo_2022-10-27_17-22-37.jpg" class="u-logo-image u-logo-image-1">
+        <a href="" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="171">
+          <img src="./images/logo.jpg" class="u-logo-image u-logo-image-1">
         </a>
       </div></header>
     <section class="u-clearfix u-custom-color-2 u-section-1" id="sec-b7c7">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <a href="Home.html" class="u-border-2 u-border-black u-border-hover-black u-btn u-button-style u-hover-grey-10 u-white u-btn-1">&lt; Go BACK</a>
+        <a href="./Home.html" class="u-border-2 u-border-black u-border-hover-black u-btn u-button-style u-hover-grey-10 u-white u-btn-1">&lt; Go BACK</a>
         <h3 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1">Join a Room</h3>
         <div class="u-border-2 u-border-grey-75 u-form u-white u-form-1">
           <form action="#" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 21px;">
             <div class="u-form-email u-form-group">
               <label for="email-7e75" class="u-label">Room Code</label>
-              <input type="email" placeholder="Enter a Code for your Room" id="email-7e75" name="Code" class="u-border-1 u-border-black u-input u-input-rectangle u-white" required="">
+              <input type="text"  placeholder="Enter a Code for your Room" id="email-7e75" name="Code" class="u-border-1 u-border-black u-input u-input-rectangle u-white" required="">
             </div>
             <div class="u-align-center u-form-group u-form-submit">
-              <a href="#" class="u-black u-border-none u-btn u-btn-submit u-button-style u-hover-grey-50 u-btn-2">Join Room</a>
-              <input type="submit" value="submit" class="u-form-control-hidden">
+              <a href="#" onclick="jRoom()" class="u-black u-border-none u-btn u-btn-submit u-button-style u-hover-grey-50 u-btn-2">Join Room</a>
+              <input type="" value="submit" class="u-form-control-hidden">
             </div>
             <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
             <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
